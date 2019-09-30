@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.ActionBar;
+//import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
@@ -61,14 +61,14 @@ public class DeviceInformationServiceFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        AppCompatActivity activity = (AppCompatActivity) getActivity();
-        if (activity != null) {
-            ActionBar actionBar = activity.getSupportActionBar();
-            if (actionBar != null) {
-                actionBar.setTitle(R.string.peripheral_dis_title);
-                actionBar.setDisplayHomeAsUpEnabled(true);
-            }
-        }
+//        AppCompatActivity activity = (AppCompatActivity) getActivity();
+//        if (activity != null) {
+//            ActionBar actionBar = activity.getSupportActionBar();
+//            if (actionBar != null) {
+//                actionBar.setTitle(R.string.peripheral_dis_title);
+//                actionBar.setDisplayHomeAsUpEnabled(true);
+//            }
+//        }
 
         final Context context = getContext();
         if (context != null) {

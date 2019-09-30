@@ -5,7 +5,7 @@ import android.content.Context;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.ActionBar;
+//import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
@@ -208,19 +208,19 @@ public class MainFragment extends Fragment {
                 titleId = R.string.main_tabbar_peripheralmode;
                 break;
         }
-        setActionBarTitle(getString(titleId));
+//        setActionBarTitle(getString(titleId));
     }
 
-    private void setActionBarTitle(String title) {
-        AppCompatActivity activity = ((AppCompatActivity) getActivity());
-        if (activity != null) {
-            ActionBar actionBar = activity.getSupportActionBar();
-            if (actionBar != null) {
-                actionBar.setTitle(title);
-                actionBar.setDisplayHomeAsUpEnabled(false);     // Don't show caret for MainFragment
-            }
-        }
-    }
+//    private void setActionBarTitle(String title) {
+//        AppCompatActivity activity = ((AppCompatActivity) getActivity());
+//        if (activity != null) {
+//            ActionBar actionBar = activity.getSupportActionBar();
+//            if (actionBar != null) {
+//                actionBar.setTitle(title);
+//                actionBar.setDisplayHomeAsUpEnabled(false);     // Don't show caret for MainFragment
+//            }
+//        }
+//    }
 
     // endregion
 

@@ -95,48 +95,48 @@ public abstract class UartBaseFragment extends ConnectedPeripheralFragment imple
     //Data UI
     String protocol;
     private LinearLayout mWork1;
-    private EditText mWork1_nameTextView;
+    private TextView mWork1_nameTextView;
     private TextView mWork1_stateTextView;
-    private EditText mWork1_content1TextView;
-    private EditText mWork1_content2TextView;
-    private EditText mWork1_content3TextView;
-    private EditText mWork1_content4TextView;
-    private EditText mWork1_content5TextView;
-    private EditText mWork1_timeTextView;
-    private EditText mWork1_protocolTextView;
+    private TextView mWork1_content1TextView;
+    private TextView mWork1_content2TextView;
+    private TextView mWork1_content3TextView;
+    private TextView mWork1_content4TextView;
+    private TextView mWork1_content5TextView;
+    private TextView mWork1_timeTextView;
+    private TextView mWork1_protocolTextView;
 
     private LinearLayout mWork2;
-    private EditText mWork2_nameTextView;
+    private TextView mWork2_nameTextView;
     private TextView mWork2_stateTextView;
-    private EditText mWork2_content1TextView;
-    private EditText mWork2_content2TextView;
-    private EditText mWork2_content3TextView;
-    private EditText mWork2_content4TextView;
-    private EditText mWork2_content5TextView;
-    private EditText mWork2_timeTextView;
-    private EditText mWork2_protocolTextView;
+    private TextView mWork2_content1TextView;
+    private TextView mWork2_content2TextView;
+    private TextView mWork2_content3TextView;
+    private TextView mWork2_content4TextView;
+    private TextView mWork2_content5TextView;
+    private TextView mWork2_timeTextView;
+    private TextView mWork2_protocolTextView;
 
     private LinearLayout mWork3;
-    private EditText mWork3_nameTextView;
+    private TextView mWork3_nameTextView;
     private TextView mWork3_stateTextView;
-    private EditText mWork3_content1TextView;
-    private EditText mWork3_content2TextView;
-    private EditText mWork3_content3TextView;
-    private EditText mWork3_content4TextView;
-    private EditText mWork3_content5TextView;
-    private EditText mWork3_timeTextView;
-    private EditText mWork3_protocolTextView;
+    private TextView mWork3_content1TextView;
+    private TextView mWork3_content2TextView;
+    private TextView mWork3_content3TextView;
+    private TextView mWork3_content4TextView;
+    private TextView mWork3_content5TextView;
+    private TextView mWork3_timeTextView;
+    private TextView mWork3_protocolTextView;
 
     private LinearLayout mWork4;
-    private EditText mWork4_nameTextView;
+    private TextView mWork4_nameTextView;
     private TextView mWork4_stateTextView;
-    private EditText mWork4_content1TextView;
-    private EditText mWork4_content2TextView;
-    private EditText mWork4_content3TextView;
-    private EditText mWork4_content4TextView;
-    private EditText mWork4_content5TextView;
-    private EditText mWork4_timeTextView;
-    private EditText mWork4_protocolTextView;
+    private TextView mWork4_content1TextView;
+    private TextView mWork4_content2TextView;
+    private TextView mWork4_content3TextView;
+    private TextView mWork4_content4TextView;
+    private TextView mWork4_content5TextView;
+    private TextView mWork4_timeTextView;
+    private TextView mWork4_protocolTextView;
 
     //Data infomation
     private int Work1_state;
@@ -351,20 +351,20 @@ public abstract class UartBaseFragment extends ConnectedPeripheralFragment imple
         }
 
         // Send Text
-        mSendEditText = view.findViewById(R.id.sendEditText);
-        mSendEditText.setOnEditorActionListener((textView, actionId, keyEvent) -> {
-            if (actionId == EditorInfo.IME_ACTION_SEND) {
-                onClickSend();
-                return true;
-            }
-            return false;
-        });
-        mSendEditText.setOnFocusChangeListener((view1, hasFocus) -> {
-            if (!hasFocus) {
-                // Dismiss keyboard when sendEditText loses focus
-                KeyboardUtils.dismissKeyboard(view1);
-            }
-        });
+//        mSendEditText = view.findViewById(R.id.sendEditText);
+//        mSendEditText.setOnEditorActionListener((textView, actionId, keyEvent) -> {
+//            if (actionId == EditorInfo.IME_ACTION_SEND) {
+//                onClickSend();
+//                return true;
+//            }
+//            return false;
+//        });
+//        mSendEditText.setOnFocusChangeListener((view1, hasFocus) -> {
+//            if (!hasFocus) {
+//                // Dismiss keyboard when sendEditText loses focus
+//                KeyboardUtils.dismissKeyboard(view1);
+//            }
+//        });
 
         mSendButton = view.findViewById(R.id.sendButton);
         mSendButton.setOnClickListener(view12 -> onClickSend());
@@ -1013,7 +1013,7 @@ public abstract class UartBaseFragment extends ConnectedPeripheralFragment imple
 
 
 
-    public int getContentCount(EditText mWork_content1TextView,EditText mWork_content2TextView, EditText mWork_content3TextView, EditText mWork_content4TextView, EditText mWork_content5TextView){
+    public int getContentCount(TextView mWork_content1TextView,TextView mWork_content2TextView, TextView mWork_content3TextView, TextView mWork_content4TextView, TextView mWork_content5TextView){
         int count = 0;
         if (!mWork_content1TextView.getText().toString().equals("")) {count++;}
         if (!mWork_content2TextView.getText().toString().equals("")) {count++;}

@@ -8,6 +8,10 @@
         android:bottomRightRadius="0dp"
         android:bottomLeftRadius="0dp" />
     <stroke
-        android:width="3dp"
+        android:width="0.5dp"
         android:color="#727272" />
+
+    <padding
+        android:top="15dp"
+        android:bottom="20dp"/>
 </shape>

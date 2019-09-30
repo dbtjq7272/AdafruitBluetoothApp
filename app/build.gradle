@@ -92,6 +92,9 @@ dependencies {
     // Image Crop
     implementation "com.naver.android.helloyako:imagecropview:1.2.3"
 
+    //fab
+    implementation 'com.google.android.material:material:1.0.0'
+
     //
     testImplementation 'junit:junit:4.12'
 }
